@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+        android:id="@+id/google_apple"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/google_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Google"
+            android:textColor="@android:color/black"
+            android:fontFamily="@font/worksansmedium"
+            android:background="@drawable/button_shape"
+            android:drawableStart="@drawable/google"
+            />
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="0dp"></Space>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/apple_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="apple"
+            android:textColor="@android:color/black"
+            android:fontFamily="@font/worksansmedium"
+            android:background="@drawable/button_shape"
+            android:drawableStart="@drawable/apple" />
+
+    </LinearLayout>
+

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/infoscreen"
+    android:layout_width="match_parent"
+    android:background="@color/dark"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="20dp"></Space>
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/circulerimage"
+            android:contentDescription="Selected Image"
+            android:scaleType="centerCrop" />
+
+
+
+    <Button
+        android:id="@+id/buttonSelectImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="add Image 📷"
+        android:textColor="@color/light"
+        android:layout_gravity="center"
+        android:background="@drawable/button_shape"
+        android:layout_marginTop="16dp" />
+
+
+
+
+
+
+
+
+</LinearLayout>
