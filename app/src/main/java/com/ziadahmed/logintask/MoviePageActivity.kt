@@ -22,6 +22,7 @@ class MoviePageActivity : AppCompatActivity() {
     private lateinit var descriptionIntroTextView: TextView
     private lateinit var descriptionFullTextView: TextView
     private lateinit var languageTextView: TextView
+    private lateinit var dateUploadedTextView: TextView
     private lateinit var mpaRatingTextView: TextView
     private lateinit var coverImageView: ImageView
 
@@ -38,6 +39,7 @@ class MoviePageActivity : AppCompatActivity() {
         descriptionFullTextView = findViewById(R.id.movie_description_full)
         languageTextView = findViewById(R.id.movie_language)
         mpaRatingTextView = findViewById(R.id.movie_mpa_rating)
+        dateUploadedTextView = findViewById(R.id.dateUploaded)
         coverImageView = findViewById(R.id.movie_image)
 
         val movieId = intent.getIntExtra("movie_id", -1)
@@ -106,8 +108,9 @@ class MoviePageActivity : AppCompatActivity() {
                         descriptionFullTextView.text = movie.descriptionFull
                         languageTextView.text = movie.language
                         mpaRatingTextView.text = movie.mpaRating
+                        dateUploadedTextView.text = movie.dateUploaded
 
-                        val imageUrl = "https://ww4.yts.nz${movie.mediumCoverImage}"
+                        val imageUrl = "https://ww4.yts.nz${movie.backgroundImage}"
                         Picasso.get().load(imageUrl).into(coverImageView)
 
 
